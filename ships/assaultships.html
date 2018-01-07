@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eashan Chauhan">
+	<!-- Title -->
+	<title>NavyShips - Helicopter Carriers</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        function openSideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('side-list').style.display = 'block';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('side-list').style.display = 'none';
+        }
+    </script>
+    <script type="text/javascript">
+        function toggleSub1() {
+            var sub1 = document.getElementById('submenu1');
+            sub1.style.display == "block" ? sub1.style.display = "none" : 
+                sub1.style.display = "block"; 
+        }
+        
+        function toggleSub2() {
+            var sub2 = document.getElementById('submenu2');
+            sub2.style.display == "block" ? sub2.style.display = "none" :
+                sub2.style.display = "block";
+        }
+        
+        function toggleSub3() {
+            var sub3 = document.getElementById('submenu3');
+            sub3.style.display == "block" ? sub3.style.display = "none" :
+                sub3.style.display = "block";
+        }
+        
+        function toggleSub4() {
+            var sub4 = document.getElementById('submenu4');
+            sub4.style.display == "block" ? sub4.style.display = "none" :
+                sub4.style.display = "block";
+        }
+    </script>
+    <div class="side-icon1">
+        <span class="normal"><i class="fa fa-angle-double-right"></i></span><span class="rights"><p><i class="fa fa-angle-double-right"></i><span class="cr"> Copyright &copy; Eashan Chauhan</span></p></span>
+    </div>
+    <header>
+        <span class="open-side">
+            <a href="#" onclick="openSideMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+        <div class="side-menu" id="side-menu">
+            <a href="#" class="close-btn" onclick="closeSideMenu()">&times;</a>
+            <ul id="side-list">
+                <li><a href="../index.html">Home</a></li>
+                <li id="parent"><a onclick="toggleSub1()">Unused Ships &rarr;</a>
+                    <ul id="submenu1">
+                        <li><a href="./battleships.html">&raquo; Battleships</a></li>
+                        <li><a href="./battlecruisers.html">&raquo; Battlecruisers</a></li>
+                        <li><a href="./heavycruisers.html">&raquo; Heavy Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub2()">Ships in use &rarr;</a>
+                    <ul id="submenu2">
+                        <li><a href="./aircraftcarriers.html">&raquo; Aircraft Carriers</a></li>
+                        <li><a href="./helicoptercarriers.html">&raquo; Helicopter Carriers</a></li>
+                        <li><a href="./assaultships.html">&raquo; Assault Ships</a></li>
+                        <li><a href="./destroyers.html">&raquo; Destroyers</a></li>
+                        <li><a href="./frigates.html">&raquo; Frigates</a></li>
+                        <li><a href="./cruisers.html">&raquo; Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub3()">Submarines &rarr;</a>
+                    <ul id="submenu3">
+                        <li><a href="../subs/older.html">&raquo; Older Subs</a></li>
+                        <li><a href="../subs/cruisemissile.html">&raquo; Cruise Missile Subs</a></li>
+                        <li><a href="../subs/ballisticmissile.html">&raquo; Ballistic Missile Subs</a></li>
+                        <li><a href="../subs/attack.html">&raquo; Attack Subs</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub4()">Naval Bases &rarr;</a>
+                    <ul id="submenu4">
+                        <li><a href="../bases/royalnavy.html">&raquo; Royal Navy</a></li>
+                        <li><a href="../bases/usnavy.html">&raquo; US Navy</a></li>
+                        <li><a href="../bases/russiannavy.html">&raquo; Russian Navy</a></li>
+                        <li><a href="../bases/frenchnavy.html">&raquo; French Navy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="align-content: center;">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="javascript:void(0)">Unused Ships</a>
+                        <ul>
+                            <li><a href="./battleships.html">Battleships</a></li>
+                            <li><a href="./battlecruisers.html">Battlecruisers</a></li>
+                            <li><a href="./heavycruisers.html">Heavy Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Ships in use</a>
+                        <ul>
+                            <li><a href="./aircraftcarriers.html">Aircraft Carriers</a></li>
+                            <li><a href="./helicoptercarriers.html">Helicopter Carriers</a></li>
+                            <li><a href="./assaultships.html">Assault Ships</a></li>
+                            <li><a href="./destroyers.html">Destroyers</a></li>
+                            <li><a href="./frigates.html">Frigates</a></li>
+                            <li><a href="./cruisers.html">Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Submarines</a>
+                        <ul>
+                            <li><a href="../subs/older.html">Older</a></li>
+                            <li><a href="../subs/cruisermissile.html">Cruise Missile</a></li>
+                            <li><a href="../subs/ballisticmissile.html">Ballistic Missile</a></li>
+                            <li><a href="../subs/attack.html">Attack</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Naval Bases</a>
+                        <ul>
+                            <li><a href="./bases/royalnavy.html">Royal Navy</a></li>
+                            <li><a href="./bases/usnavy.html">US Navy</a></li>
+                            <li><a href="./bases/russiannavy.html">Russian Navy</a></li>
+                            <li><a href="x./bases/frenchnavy.html">French Navy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header-text">NavyShips</h1>
+    </header>
+    <section id="banner">
+        <h1>Assault Ships - NavyShips</h1>
+    </section>
+    <section class="bg-strip bg2"></section>
+    <section class="content">
+        <div id="toc-container">
+            <p id="toc-title">Contents</p>
+            <ul class="toc-list">
+                <li><a href="#usnavy">1 US Navy</a></li>
+                <li><a href="#royalnavy">2 Royal Navy</a></li>
+                <li><a href="#chinesenavy">3 Chinese Navy</a></li>
+                <li><a href="#indonesiannavy">4 Indonesian Navy</a></li>
+            </ul>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="usnavy">
+        <h1 class="title">US Navy</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>LPD-1 - LPD-2 &amp; AGF-3</td>
+                    <td>Raleigh-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Raleigh</li>
+                            <li>USS Vancouver</li>
+                            <li>USS La Salle</li>
+                        </ul>
+                    </td>
+                    <td>1962 - 2005</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Raleigh-class_amphibious_transport_dock">Click</a></td>
+                </tr>
+                <tr>
+                    <td>LPD-4 - LPD-15</td>
+                    <td>Austin-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Austin</li>
+                            <li>USS Ogden</li>
+                            <li>USS Duluth</li>
+                            <li>USS Cleaveland</li>
+                            <li>USS Dubuque</li>
+                            <li>USS Denver</li>
+                            <li>USS Juneau</li>
+                            <li>USS Shreveport</li>
+                            <li>USS Nashville</li>
+                            <li>USS Trenton</li>
+                            <li>USS Ponce</li>
+                        </ul>
+                    </td>
+                    <td>1965 - 2017</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Austin-class_amphibious_transport_dock">Click</a></td>
+                </tr>
+                <tr>
+                    <td>LPD-17 - LPD-28</td>
+                    <td>San Antonio-class</td>
+                    <td>
+                        <ul>
+                            <li>USS San Antonio</li>
+                            <li>USS New Orleans</li>
+                            <li>USS Mesa Verde</li>
+                            <li>USS Green Bay</li>
+                            <li>USS New York</li>
+                            <li>USS San Diego</li>
+                            <li>USS Anchorage</li>
+                            <li>USS Arlington</li>
+                            <li>USS Somerset</li>
+                            <li>USS John P. Murtha</li>
+                            <li>USS Portland</li>
+                            <li>USS Fort Lauderdale <small>(Under construction)</small></li>
+                        </ul>
+                    </td>
+                    <td>2006 - present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/San_Antonio-class_amphibious_transport_dock">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="royalnavy">
+        <h1 class="title">Royal Navy</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%">Description</th>
+                    <th width="9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>L10 - L11</td>
+                    <td>Fearless-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Fearless</li>
+                            <li>HMS Intrepid</li>
+                        </ul>
+                    </td>
+                    <td>1965 - 2002</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fearless-class_landing_platform_dock">Click</a></td>
+                </tr>
+                <tr>
+                    <td>L14 - L15</td>
+                    <td>Albion-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Albion</li>
+                            <li>HMS Bulwark</li>
+                        </ul>
+                    </td>
+                    <td>2003 - present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Albion-class_landing_platform_dock">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="chinesenavy">
+        <h1 class="title">People's Liberation Army Navy (China)</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%">Description</th>
+                    <th width="9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>988 - 989 &amp; 998 - 999</td>
+                    <td>Yuzhao-class</td>
+                    <td>
+                        <ul>
+                            <li>CNS Kunlun Shan</li>
+                            <li>CNS Jinggang Shan</li>
+                            <li>CNS Changbai Shan</li>
+                            <li>CNS Yimgeng Shan</li>
+                            <li><small>(2 more to be constructed)</small></li>
+                        </ul>
+                    </td>
+                    <td>2007 - present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Type_071_amphibious_transport_dock">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="indonesiannavy">
+        <h1 class="title">Indonesian Navy</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%">Description</th>
+                    <th width="9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>590 - 593</td>
+                    <td>Makassar-class</td>
+                    <td>
+                        <ul>
+                            <li>KRI Makassar</li>
+                            <li>KRI Surabaya</li>
+                            <li>KRI Banjarmasin</li>
+                            <li>KRI Banda Aceh</li>
+                        </ul>
+                    </td>
+                    <td>2007 - present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Makassar-class_landing_platform_dock">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

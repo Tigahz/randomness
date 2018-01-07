@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eashan Chauhan">
+	<!-- Title -->
+	<title>NavyShips - Destroyers</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        function openSideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('side-list').style.display = 'block';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('side-list').style.display = 'none';
+        }
+    </script>
+    <script type="text/javascript">
+        function toggleSub1() {
+            var sub1 = document.getElementById('submenu1');
+            sub1.style.display == "block" ? sub1.style.display = "none" : 
+                sub1.style.display = "block"; 
+        }
+        
+        function toggleSub2() {
+            var sub2 = document.getElementById('submenu2');
+            sub2.style.display == "block" ? sub2.style.display = "none" :
+                sub2.style.display = "block";
+        }
+        
+        function toggleSub3() {
+            var sub3 = document.getElementById('submenu3');
+            sub3.style.display == "block" ? sub3.style.display = "none" :
+                sub3.style.display = "block";
+        }
+        
+        function toggleSub4() {
+            var sub4 = document.getElementById('submenu4');
+            sub4.style.display == "block" ? sub4.style.display = "none" :
+                sub4.style.display = "block";
+        }
+    </script>
+    <div class="side-icon1">
+        <span class="normal"><i class="fa fa-angle-double-right"></i></span><span class="rights"><p><i class="fa fa-angle-double-right"></i><span class="cr"> Copyright &copy; Eashan Chauhan</span></p></span>
+    </div>
+    <header>
+        <span class="open-side">
+            <a href="#" onclick="openSideMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+        <div class="side-menu" id="side-menu">
+            <a href="#" class="close-btn" onclick="closeSideMenu()">&times;</a>
+            <ul id="side-list">
+                <li><a href="../index.html">Home</a></li>
+                <li id="parent"><a onclick="toggleSub1()">Unused Ships &rarr;</a>
+                    <ul id="submenu1">
+                        <li><a href="./battleships.html">&raquo; Battleships</a></li>
+                        <li><a href="./battlecruisers.html">&raquo; Battlecruisers</a></li>
+                        <li><a href="./heavycruisers.html">&raquo; Heavy Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub2()">Ships in use &rarr;</a>
+                    <ul id="submenu2">
+                        <li><a href="./aircraftcarriers.html">&raquo; Aircraft Carriers</a></li>
+                        <li><a href="./helicoptercarriers.html">&raquo; Helicopter Carriers</a></li>
+                        <li><a href="./assaultships.html">&raquo; Assault Ships</a></li>
+                        <li><a href="./destroyers.html">&raquo; Destroyers</a></li>
+                        <li><a href="./frigates.html">&raquo; Frigates</a></li>
+                        <li><a href="./cruisers.html">&raquo; Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub3()">Submarines &rarr;</a>
+                    <ul id="submenu3">
+                        <li><a href="../subs/older.html">&raquo; Older Subs</a></li>
+                        <li><a href="../subs/cruisemissile.html">&raquo; Cruise Missile Subs</a></li>
+                        <li><a href="../subs/ballisticmissile.html">&raquo; Ballistic Missile Subs</a></li>
+                        <li><a href="../subs/attack.html">&raquo; Attack Subs</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub4()">Naval Bases &rarr;</a>
+                    <ul id="submenu4">
+                        <li><a href="../bases/royalnavy.html">&raquo; Royal Navy</a></li>
+                        <li><a href="../bases/usnavy.html">&raquo; US Navy</a></li>
+                        <li><a href="../bases/russiannavy.html">&raquo; Russian Navy</a></li>
+                        <li><a href="../bases/frenchnavy.html">&raquo; French Navy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="align-content: center;">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="javascript:void(0)">Unused Ships</a>
+                        <ul>
+                            <li><a href="./battleships.html">Battleships</a></li>
+                            <li><a href="./battlecruisers.html">Battlecruisers</a></li>
+                            <li><a href="./heavycruisers.html">Heavy Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Ships in use</a>
+                        <ul>
+                            <li><a href="./aircraftcarriers.html">Aircraft Carriers</a></li>
+                            <li><a href="./helicoptercarriers.html">Helicopter Carriers</a></li>
+                            <li><a href="./assaultships.html">Assault Ships</a></li>
+                            <li><a href="./destroyers.html">Destroyers</a></li>
+                            <li><a href="./frigates.html">Frigates</a></li>
+                            <li><a href="./cruisers.html">Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Submarines</a>
+                        <ul>
+                            <li><a href="../subs/older.html">Older</a></li>
+                            <li><a href="../subs/cruisermissile.html">Cruise Missile</a></li>
+                            <li><a href="../subs/ballisticmissile.html">Ballistic Missile</a></li>
+                            <li><a href="../subs/attack.html">Attack</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Naval Bases</a>
+                        <ul>
+                            <li><a href="../bases/royalnavy.html">Royal Navy</a></li>
+                            <li><a href="../bases/usnavy.html">US Navy</a></li>
+                            <li><a href="../bases/russiannavy.html">Russian Navy</a></li>
+                            <li><a href="../bases/frenchnavy.html">French Navy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header-text">NavyShips</h1>
+    </header>
+    <section id="banner">
+        <h1>Destroyers - NavyShips</h1>
+    </section>
+    <section class="bg-strip bg3"></section>
+    <section class="content">
+        <div id="toc-container">
+            <p id="toc-title">Contents</p>
+            <ul class="toc-list">
+                <li><a href="#usnavy">1 US Navy</a></li>
+                <li><a href="#royalnavy">2 Royal Navy</a></li>
+            </ul>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="usnavy">
+        <h1 class="title">US Navy</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%">Description</th>
+                    <th width="9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>DD-69 - DD-74</td>
+                    <td>Caldwell-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Caldwell</li>
+                            <li>USS Craven</li>
+                            <li>USS Gwin</li>
+                            <li>USS Conner</li>
+                            <li>USS Stockton</li>
+                            <li>USS Manley</li>
+                        </ul>
+                    </td>
+                    <td>1917 - 45</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Caldwell-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-75 - DD-185</td>
+                    <td>Wickes-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Wickes</li>
+                            <li>USS Philip</li>
+                            <li>USS Woolsey</li>
+                            <li>USS Evans</li>
+                            <li>USS Little</li>
+                            <li>USS Kimberly</li>
+                            <li>USS Sigourney</li>
+                            <li>USS Gregory</li>
+                            <li>USS Stringham</li>
+                            <li>USS Dyer</li>
+                            <li>USS Colhoun</li>
+                            <li>USS Stevens</li>
+                            <li>USS McKee</li>
+                            <li>USS Robinson</li>
+                            <li>USS Ringgold</li>
+                            <li>USS McKean</li>
+                            <li>USS Harding</li>
+                            <li>USS Gridley</li>
+                            <li>USS Fairfax</li>
+                            <li>USS Taylor</li>
+                            <li>USS Bell</li>
+                            <li>USS Stribling</li>
+                            <li>USS Murray</li>
+                            <li>USS Israel</li>
+                            <li>USS Luce</li>
+                            <li>USS Maury</li>
+                            <li>USS Lansdale</li>
+                            <li>USS Mahan</li>
+                            <li>USS Schley</li>
+                            <li>USS Champlin</li>
+                            <li>USS Mugford</li>
+                            <li>USS Chew</li>
+                            <li>USS Hazelwood</li>
+                            <li>USS Williams</li>
+                            <li>USS Crane</li>
+                            <li>USS Hart</li>
+                            <li>USS Ingraham</li>
+                            <li>USS Ludlow</li>
+                            <li>USS Rathburne</li>
+                            <li>USS Talbot</li>
+                            <li>USS Waters</li>
+                            <li>USS Dent</li>
+                            <li>USS Dorsey</li>
+                            <li>USS Lea</li>
+                            <li>USS Lamberton</li>
+                            <li>USS Radford</li>
+                            <li>USS Montgomery</li>
+                            <li>USS Breese</li>
+                            <li>USS Gamble</li>
+                            <li>USS Ramsay</li>
+                            <li>USS Tattnall</li>
+                            <li>USS Badger</li>
+                            <li>USS Twiggs</li>
+                            <li>USS Babbitt</li>
+                            <li>USS DeLong</li>
+                            <li>USS Jacob Jones</li>
+                            <li>USS Buchanan</li>
+                            <li>USS Aaron Ward</li>
+                            <li>USS Hale</li>
+                            <li>USS Crowninshield</li>
+                            <li>USS Tillman</li>
+                            <li>USS Boggs</li>
+                            <li>USS Kilty</li>
+                            <li>USS Kennison</li>
+                            <li>USS Ward</li>
+                            <li>USS Claxton</li>
+                            <li>USS Hamilton</li>
+                            <li>USS Tarbell</li>
+                            <li>USS Yarnall</li>
+                            <li>USS Upshur</li>
+                            <li>USS Greer</li>
+                            <li>USS Elliot</li>
+                            <li>USS Roper</li>
+                            <li>USS Breckinridge</li>
+                            <li>USS Barney</li>
+                            <li>USS Blakeley</li>
+                            <li>USS Biddle</li>
+                            <li>USS Du Pont</li>
+                            <li>USS Bernadou</li>
+                            <li>USS Ellis</li>
+                            <li>USS Cole</li>
+                            <li>USS J. Fred Talbott</li>
+                            <li>USS Dickerson</li>
+                            <li>USS Leary</li>
+                            <li>USS Schenck</li>
+                            <li>USS Herbet</li>
+                            <li>USS Palmer</li>
+                            <li>USS Thatcher</li>
+                            <li>USS Walker</li>
+                            <li>USS Crosby</li>
+                            <li>USS Meredith</li>
+                            <li>USS Bush</li>
+                            <li>USS Cowell</li>
+                            <li>USS Maddox</li>
+                            <li>USS Foote</li>
+                            <li>USS Kalk</li>
+                            <li>USS Burns</li>
+                            <li>USS Anthony</li>
+                            <li>USS Sproston</li>
+                            <li>USS Rizal</li>
+                            <li>USS Mackenzie</li>
+                            <li>USS Renshaw</li>
+                            <li>USS O'Bannon</li>
+                            <li>USS Hogan</li>
+                            <li>USS Howard</li>
+                            <li>USS Stansbury</li>
+                            <li>USS Hopewell</li>
+                            <li>USS Thomas</li>
+                            <li>USS Haraden</li>
+                            <li>USS Abbot</li>
+                            <li>USS Bagley</li>
+                        </ul>
+                    </td>
+                    <td>1918 - 46</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Wickes-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-186 - DD-199 &amp; DD-206 - DD-347</td>
+                    <td>Clemson-class</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_Clemson-class_destroyers">156 ships.</a></td>
+                    <td>1919 - 48</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Clemson-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-348 - DD-355</td>
+                    <td>Farragut-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Farragut</li>
+                            <li>USS Dewey</li>
+                            <li>USS Hull</li>
+                            <li>USS Macdonough</li>
+                            <li>USS Wordon</li>
+                            <li>USS Dale</li>
+                            <li>USS Monaghan</li>
+                            <li>USS Aylwin</li>
+                        </ul>
+                    </td>
+                    <td>1934 - 45</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Farragut-class_destroyer_(1934)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-356 - DD-363</td>
+                    <td>Porter-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Porter</li>
+                            <li>USS Selfridge</li>
+                            <li>USS McDougal</li>
+                            <li>USS Winslow</li>
+                            <li>USS Phelps</li>
+                            <li>USS Clark</li>
+                            <li>USS Moffet</li>
+                        </ul>
+                    </td>
+                    <td>1936 - 50</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Porter-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-364 - DD-385</td>
+                    <td>Mahan-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Mahan</li>
+                            <li>USS Cummings</li>
+                            <li>USS Drayton</li>
+                            <li>USS Lamson</li>
+                            <li>USS Flusser</li>
+                            <li>USS Reid</li>
+                            <li>USS Case</li>
+                            <li>USS Conyngham</li>
+                            <li>USS Cassin</li>
+                            <li>USS Shaw</li>
+                            <li>USS Tucker</li>
+                            <li>USS Downes</li>
+                            <li>USS Cushing</li>
+                            <li>USS Perkins</li>
+                            <li>USS Smith</li>
+                            <li>USS Preston</li>
+                            <li>USS Dunlap</li>
+                            <li>USS Fanning</li>
+                        </ul>
+                    </td>
+                    <td>1936 - 47</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Mahan-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-380, DD-382 &amp; DD-400 - DD-401</td>
+                    <td>Gridley-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Gridley</li>
+                            <li>USS Craven</li>
+                            <li>USS McCain</li>
+                            <li>USS Maury</li>
+                        </ul>
+                    </td>
+                    <td>1937 - 46</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Gridley-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-386 - DD-393</td>
+                    <td>Bagley-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Bagley</li>
+                            <li>USS Blue</li>
+                            <li>USS Helm</li>
+                            <li>USS Mugford</li>
+                            <li>USS Ralph Talbot</li>
+                            <li>USS Henley</li>
+                            <li>USS Patterson</li>
+                            <li>USS Jarvis</li>
+                        </ul>
+                    </td>
+                    <td>1937 - 46</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Bagley-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-381, DD-383 &amp; DD-394 - DD-396</td>
+                    <td>Somers-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Somers</li>
+                            <li>USS Warrington</li>
+                            <li>USS Sampson</li>
+                            <li>USS Davis</li>
+                            <li>USS Jouett</li>
+                        </ul>
+                    </td>
+                    <td>1937 - 45</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Somers-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-397 - DD-408</td>
+                    <td>Benham-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Benham</li>
+                            <li>USS Ellet</li>
+                            <li>USS Lang</li>
+                            <li>USS Mayrant</li>
+                            <li>USS Trippe</li>
+                            <li>USS Rhind</li>
+                            <li>USS Rowan</li>
+                            <li>USS Stack</li>
+                            <li>USS Sterett</li>
+                            <li>USS Wilson</li>
+                        </ul>
+                    </td>
+                    <td>1939 - 46</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Benham-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-409 - DD-420</td>
+                    <td>Sims-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Sims</li>
+                            <li>USS Hughes</li>
+                            <li>USS Anderson</li>
+                            <li>USS Hammann</li>
+                            <li>USS Mustin</li>
+                            <li>USS Russell</li>
+                            <li>USS O'Brien</li>
+                            <li>USS Walke</li>
+                            <li>USS Morris</li>
+                            <li>USS Roe</li>
+                            <li>USS Wainwright</li>
+                            <li>USS Buck</li>
+                        </ul>
+                    </td>
+                    <td>1939 - 46</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Sims-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-421 - DD-428, DD-459 - DD-460, DD-491 - DD-492 &amp; DD-598 - DD-617</td>
+                    <td>Benson-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Benson</li>
+                            <li>USS Mayo</li>
+                            <li>USS Madison</li>
+                            <li>USS Lansdale</li>
+                            <li>USS Hilary P. Jones</li>
+                            <li>USS Charles F. Hughes</li>
+                            <li>USS Laffey</li>
+                            <li>USS Woodworth</li>
+                            <li>USS Farenholt</li>
+                            <li>USS Bailey</li>
+                            <li>USS Bancroft</li>
+                            <li>USS Barton</li>
+                            <li>USS Boyle</li>
+                            <li>USS Champlin</li>
+                            <li>USS Meade</li>
+                            <li>USS Murphy</li>
+                            <li>USS Parker</li>
+                            <li>USS Caldwell</li>
+                            <li>USS Coghlan</li>
+                            <li>USS Frazier</li>
+                            <li>USS Gansevoort</li>
+                            <li>USS Gillespie</li>
+                            <li>USS Hobby</li>
+                            <li>USS Kalk</li>
+                            <li>USS Kendrick</li>
+                            <li>USS Laub</li>
+                            <li>USS MacKenzie</li>
+                            <li>USS McLanahan</li>
+                            <li>USS Nields</li>
+                            <li>USS Ordronaux</li>
+                        </ul>
+                    </td>
+                    <td>1940 - 51</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Benson-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DD-423 - DD-424, DD-429 - DD-444, DD-453 - DD-497, DD-618 - DD-628, DD-632 - DD-641 &amp; DD-645 - DD-648</td>
+                    <td>Gleaves-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Gleaves</li>
+                            <li>USS Niblack</li>
+                            <li>USS Livermore</li>
+                            <li>USS Eberle</li>
+                            <li>USS Plunkett</li>
+                            <li>USS Kearny</li>
+                            <li>USS Gwin</li>
+                            <li>USS Meredith</li>
+                            <li>USS Grayson</li>
+                            <li>USS Monssen</li>
+                            <li>USS Woolsey</li>
+                            <li>USS Ludlow</li>
+                            <li>USS Edison</li>
+                            <li>USS Ericsson</li>
+                            <li>USS Wilkes</li>
+                            <li>USS Nicholson</li>
+                            <li>USS Swanson</li>
+                            <li>USS Ingraham</li>
+                            <li>USS Bristol</li>
+                            <li>USS Ellyson</li>
+                            <li>USS Hambleton</li>
+                            <li>USS Rodman</li>
+                            <li>USS Emmons</li>
+                            <li>USS Macomb</li>
+                            <li>USS Forrest</li>
+                            <li>USS Fitch</li>
+                            <li>USS Corry</li>
+                            <li>USS Hobson</li>
+                            <li>USS Aaron Ward</li>
+                            <li>USS Buchanan</li>
+                            <li>USS Duncan</li>
+                            <li>USS Lansdowne</li>
+                            <li>USS Lardner</li>
+                            <li>USS McCalla</li>
+                            <li>USS Mervine</li>
+                            <li>USS Quick</li>
+                            <li>USS Carmick</li>
+                            <li>USS Doyle</li>
+                            <li>USS Endicott</li>
+                            <li>USS McCook</li>
+                            <li>USS Frankford</li>
+                            <li>USS Davison</li>
+                            <li>USS Edwards</li>
+                            <li>USS Glennon</li>
+                            <li>USS Jeffers</li>
+                            <li>USS Maddox</li>
+                            <li>USS Nelson</li>
+                            <li>USS Baldwin</li>
+                            <li>USS Harding</li>
+                            <li>USS Satterlee</li>
+                            <li>USS Thompson</li>
+                            <li>USS Welles</li>
+                            <li>USS Cowie</li>
+                            <li>USS Knight</li>
+                            <li>USS Doran</li>
+                            <li>USS Earle</li>
+                            <li>USS Butler</li>
+                            <li>USS Gherardi</li>
+                            <li>USS Herndon</li>
+                            <li>USS Shubrick</li>
+                            <li>USS Beatty</li>
+                            <li>USS Tillman</li>
+                            <li>USS Stevenson</li>
+                            <li>USS Stockton</li>
+                            <li>USS Thorn</li>
+                            <li>USS Turner</li>
+                        </ul>
+                    </td>
+                    <td>1940 - 56</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/Gleaves-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>Various</td>
+                    <td>Fletcher-class</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_Fletcher-class_destroyers">175 ships.</a></td>
+                    <td>1942 - 2001</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fletcher-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>TM; NB</td>
+                    <td>
+                        <ul>
+                            <li>Allen M. Sumner-class</li>
+                            <li>Robert H. Smith-class</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <!-- <li><a target="_blank" href="https://en.wikipedia.org/wiki/Allen_M._Sumner-class_destroyer#Ships_in_class">Click</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Robert_H._Smith-class_destroyer#Ships_in_class">Click</a></li> -->
+                        </ul>
+                    </td>
+                    <Td>1944 - 58</Td>
+                    <td><i>Robert H. Smith</i>-class is a subclass.</td>
+                    <td>
+                        <ul>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Allen_M._Sumner-class_destroyer">Click</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Robert_H._Smith-class_destroyer">Click</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DDG-51 - DDG-127</td>
+                    <td>Arleigh Burke-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Arleigh Burke</li>
+                            <li>USS Barry</li>
+                            <li>USS John Paul Jones</li>
+                            <li>USS Curtis Wilbur</li>
+                            <li>USS Stout</li>
+                            <li>USS John S. McCain</li>
+                            <li>USS Mitscher</li>
+                            <li>USS Laboon</li>
+                            <li>USS Russell</li>
+                            <li>USS Paul Hamilton</li>
+                            <li>USS Ramage</li>
+                            <li>USS Fitzgerald</li>
+                            <li>USS Stetham</li>
+                            <li>USS Camey</li>
+                            <li>USS Benfold</li>
+                            <li>USS Gonzalez</li>
+                            <li>USS Cole</li>
+                            <li>USS The Sullivans</li>
+                            <li>USS Milius</li>
+                            <li>USS Hopper</li>
+                            <li>USS Ross</li>
+                            <li>USS Mahan</li>
+                            <li>USS Decatur</li>
+                            <li>USS McFaul</li>
+                            <li>USS Donald Cook</li>
+                            <li>USS Higgins</li>
+                            <li>USS O'Kane</li>
+                            <li>USS Porter</li>
+                            <li>USS Oscar Austin</li>
+                            <li>USS Roosevelt</li>
+                            <li>USS Winston S. Churchill</li>
+                            <li>USS Lassen</li>
+                            <li>USS Howard</li>
+                            <li>USS Bulkeley</li>
+                            <li>USS McCampbell</li>
+                            <li>USS Shoup</li>
+                            <li>USS Mason</li>
+                            <li>USS Preble</li>
+                            <li>USS Chafee</li>
+                            <li>USS Pinckney</li>
+                            <li>USS Momsen</li>
+                            <li>USS Chung-Hoon</li>
+                            <li>USS Nitze</li>
+                            <li>USS James E. Williams</li>
+                            <li>USS Bainbridge</li>
+                            <li>USS Halsey</li>
+                            <li>USS Forrest Sherman</li>
+                            <li>USS Farragut</li>
+                            <li class="star">USS Kidd</li>
+                            <li>USS Gridley</li>
+                            <li>USS Sampson</li>
+                            <li>USS Truxton</li>
+                            <li>USS Sterett</li>
+                            <li>USS Dewey</li>
+                            <li>USS Stockdale</li>
+                            <li>USS Gravely</li>
+                            <li>USS Wayne E. Meyer</li>
+                            <li>USS Jason Dunham</li>
+                            <li>USS William P. Lawrence</li>
+                            <li>USS Spruance</li>
+                            <li>USS Michael Murphy</li>
+                            <li>USS John Finn</li>
+                            <li>USS Ralph Johnson</li>
+                            <li>USS Raphael Peralta</li>
+                            <li>USS Thomas Hudner</li>
+                            <li>USS Paul Ignatius</li>
+                            <li>USS Daniel Inouye</li>
+                            <li>USS Delbert D. Black</li>
+                            <li>USS Carl M. Levin</li>
+                            <li>USS Frank E. Petersen Jr.</li>
+                            <li>USS John Basilone</li>
+                            <li>USS Lenah H. Sutcliffe Higbee</li>
+                            <li>USS Harvey C. Barnum Jr.</li>
+                            <li>USS Jack H. Lucas</li>
+                            <li>USS Louis H. Wilson Jr.</li>
+                            <li>TBD</li>
+                        </ul>
+                        <br>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Arleigh_Burke-class_destroyer#Ships_in_class" id="arlLink">77 ships.</a>
+                    </td>
+                    <td>1991 - present</td>
+                    <td>77 planned. Admiral Arleigh Burke was alive when the USS Arleigh Burke was comissioned.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Arleigh_Burke-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>DDG-1000 - DDG-1002</td>
+                    <td>Zumwalt-class</td>
+                    <td><ul><li>USS Zumwalt</li><li>USS Michael Monsoor</li><li>USS Lyndon B. Johnson</li></ul></td>
+                    <td>2016 - present</td>
+                    <td>32 originally planned. 29 cancelled.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Zumwalt-class_destroyer">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="royalnavy">
+        <h1 class="title">Royal Navy</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>D38</td>
+                    <td>---</td>
+                    <td>
+                        <ul>
+                            <li>HMS Ambuscade</li>
+                        </ul>
+                    </td>
+                    <td>1926 - 1947</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Ambuscade_(D38)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D39</td>
+                    <td>---</td>
+                    <td>
+                        <ul>
+                            <li>HMS Amazon</li>
+                        </ul>
+                    </td>
+                    <td>1927 - 1948</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Amazon_(D39)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>209 Designations</td>
+                    <td>A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y &amp; Z-class</td>
+                    <td>209 ships.</td>
+                    <td>1930 - 1982</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/A-_and_B-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>Various</td>
+                    <td>Tribal-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Afridi</li>
+                            <li>HMS Ashanti</li>
+                            <li>HMS Bedouin</li>
+                            <li>HMS Cossack</li>
+                            <li>HMS Eskimo</li>
+                            <li>HMS Gurkha</li>
+                            <li>HMS Maori</li>
+                            <li>HMS Mashona</li>
+                            <li>HMS Matabele</li>
+                            <li>HMS Mohawk</li>
+                            <li>HMS Nubian</li>
+                            <li>HMS Punjabi</li>
+                            <li>HMS Sikh</li>
+                            <li>HMS Somali</li>
+                            <li>HMS Tartar</li>
+                            <li>HMS Zulu</li>
+                        </ul>
+                    </td>
+                    <td>1938 - 1949</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Tribal-class_destroyer"_(1936)>Click</a></td>
+                </tr>
+                <tr>
+                    <td>Various</td>
+                    <td>C-class</td>
+                    <td>32 ships.</td>
+                    <td>1944 - 1972</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/C-class_destroyer_(1943)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D31, D64, D96, D118</td>
+                    <td>Weapon-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Battleaxe</li>
+                            <li>HMS Broadsword</li>
+                            <li>HMS Scorpion</li>
+                            <li>HMS Crossbow</li>
+                        </ul>
+                    </td>
+                    <td>1947 - 1972</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Weapon-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>Various</td>
+                    <td>Battle-class</td>
+                    <td>24 ships.</td>
+                    <td>1944 - 1967</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Battle-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D05, D35, D106, D108, D114, D119, D12 &amp; D154</td>
+                    <td>Daring-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Delight</li>
+                            <li>HMS Daring</li>
+                            <li>HMS Dainty</li>
+                            <li>HMS Diamond</li>
+                            <li>HMS Defender</li>
+                            <li>HMS Decoy</li>
+                            <li>HMS Diana</li>
+                            <li>HMS Duchess</li>
+                        </ul>
+                    </td>
+                    <td>1953 - 1981</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Daring-class_destroyer_(1949)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D02, D06, D12, D16 &amp; D18 - D21</td>
+                    <td>County-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Devonshire</li>
+                            <li>HMS Hampshire</li>
+                            <li>HMS Kent</li>
+                            <li>HMS London</li>
+                            <li>HMS Fife</li>
+                            <li>HMS Glamorgan</li>
+                            <li>HMS Norfolk</li>
+                            <li>HMS Antrim</li>
+                        </ul>
+                    </td>
+                    <td>1962 - 1984</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/County-class_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D23</td>
+                    <td>Type 82 / Bristol-class</td>
+                    <td>HMS Bristol</td>
+                    <td>1973 - present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Type_82_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D80, D86 - D92, D95 - D98, D108 &amp; D118</td>
+                    <td>Type 42 / Sheffield-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Sheffield</li>
+                            <li>HMS Birmingham</li>
+                            <li>HMS Newcastle</li>
+                            <li>HMS Coventry</li>
+                            <li>HMS Glasgow</li>
+                            <li>HMS Cardiff</li>
+                            <li>HMS Exeter</li>
+                            <li>HMS Southampton</li>
+                            <li>HMS Liverpool</li>
+                            <li>HMS Nottingham</li>
+                            <li>HMS Manchester</li>
+                            <li>HMS York</li>
+                            <li>HMS Glouchester</li>
+                            <li>HMS Edinburgh</li>
+                        </ul>
+                    </td>
+                    <td>1975 - 2013</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Type_42_destroyer">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D32 - D37</td>
+                    <td>Type 45 / Daring-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Daring</li>
+                            <li>HMS Dauntless</li>
+                            <li>HMS Diamond</li>
+                            <li>HMS Dragon</li>
+                            <li>HMS Defender</li>
+                            <li>HMS Duncan</li>
+                        </ul>
+                    </td>
+                    <td>2009 - present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Type_45_destroyer">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

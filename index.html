@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eashan Chauhan">
+	<!-- Title -->
+	<title>NavyShips - Home Page</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        function openSideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('side-list').style.display = 'block';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('side-list').style.display = 'none';
+        }
+    </script>
+    <script type="text/javascript">
+        function toggleSub1() {
+            var sub1 = document.getElementById('submenu1');
+            sub1.style.display == "block" ? sub1.style.display = "none" : 
+                sub1.style.display = "block"; 
+        }
+        
+        function toggleSub2() {
+            var sub2 = document.getElementById('submenu2');
+            sub2.style.display == "block" ? sub2.style.display = "none" :
+                sub2.style.display = "block";
+        }
+        
+        function toggleSub3() {
+            var sub3 = document.getElementById('submenu3');
+            sub3.style.display == "block" ? sub3.style.display = "none" :
+                sub3.style.display = "block";
+        }
+        
+        function toggleSub4() {
+            var sub4 = document.getElementById('submenu4');
+            sub4.style.display == "block" ? sub4.style.display = "none" :
+                sub4.style.display = "block";
+        }
+    </script>
+    <div class="side-icon1">
+        <span class="normal"><i class="fa fa-angle-double-right"></i></span><span class="rights"><p><i class="fa fa-angle-double-right"></i><span class="cr"> Copyright &copy; Eashan Chauhan</span></p></span>
+    </div>
+    <header>
+        <span class="open-side">
+            <a href="#" onclick="openSideMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+        <div class="side-menu" id="side-menu">
+            <a href="#" class="close-btn" onclick="closeSideMenu()">&times;</a>
+            <ul id="side-list">
+                <li><a href="./index.html">Home</a></li>
+                <li id="parent"><a onclick="toggleSub1()">Unused Ships &rarr;</a>
+                    <ul id="submenu1">
+                        <li><a href="./ships/battleships.html">&raquo; Battleships</a></li>
+                        <li><a href="./ships/battlecruisers.html">&raquo; Battlecruisers</a></li>
+                        <li><a href="./ships/heavycruisers.html">&raquo; Heavy Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub2()">Ships in use &rarr;</a>
+                    <ul id="submenu2">
+                        <li><a href="./ships/aircraftcarriers.html">&raquo; Aircraft Carriers</a></li>
+                        <li><a href="./ships/helicoptercarriers.html">&raquo; Helicopter Carriers</a></li>
+                        <li><a href="./ships/assaultships.html">&raquo; Assault Ships</a></li>
+                        <li><a href="./ships/destroyers.html">&raquo; Destroyers</a></li>
+                        <li><a href="./ships/frigates.html">&raquo; Frigates</a></li>
+                        <li><a href="./ships/cruisers.html">&raquo; Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub3()">Submarines &rarr;</a>
+                    <ul id="submenu3">
+                        <li><a href="./subs/older.html">&raquo; Older Subs</a></li>
+                        <li><a href="./subs/cruisemissile.html">&raquo; Cruise Missile Subs</a></li>
+                        <li><a href="./subs/ballisticmissile.html">&raquo; Ballistic Missile Subs</a></li>
+                        <li><a href="./subs/attack.html">&raquo; Attack Subs</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub4()">Naval Bases &rarr;</a>
+                    <ul id="submenu4">
+                        <li><a href="./bases/royalnavy.html">&raquo; Royal Navy</a></li>
+                        <li><a href="./bases/usnavy.html">&raquo; US Navy</a></li>
+                        <li><a href="./bases/russiannavy.html">&raquo; Russian Navy</a></li>
+                        <li><a href="./bases/frenchnavy.html">&raquo; French Navy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="align-content: center;">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="javascript:void(0)">Unused Ships</a>
+                        <ul>
+                            <li><a href="./shipsbattleships.html">Battleships</a></li>
+                            <li><a href="./ships/battlecruisers.html">Battlecruisers</a></li>
+                            <li><a href="./ships/heavycruisers.html">Heavy Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Ships in use</a>
+                        <ul>
+                            <li><a href="./ships/aircraftcarriers.html">Aircraft Carriers</a></li>
+                            <li><a href="./ships/helicoptercarriers.html">Helicopter Carriers</a></li>
+                            <li><a href="./ships/assaultships.html">Assault Ships</a></li>
+                            <li><a href="./ships/destroyers.html">Destroyers</a></li>
+                            <li><a href="./ships/frigates.html">Frigates</a></li>
+                            <li><a href="./ships/cruisers.html">Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Submarines</a>
+                        <ul>
+                            <li><a href="./subs/older.html">Older</a></li>
+                            <li><a href="./subs/cruisermissile.html">Cruise Missile</a></li>
+                            <li><a href="./subs/ballisticmissile.html">Ballistic Missile</a></li>
+                            <li><a href="./subs/attack.html">Attack</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Naval Bases</a>
+                        <ul>
+                            <li><a href="./bases/royalnavy.html">Royal Navy</a></li>
+                            <li><a href="./bases/usnavy.html">US Navy</a></li>
+                            <li><a href="./bases/russiannavy.html">Russian Navy</a></li>
+                            <li><a href="x./bases/frenchnavy.html">French Navy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header-text">NavyShips</h1>
+    </header>
+    <section id="banner">
+        <h1>Home Page - NavyShips</h1>
+    </section>
+    <section class="bg-strip bg4"></section>
+    <section id="information">
+        <div class="boxes">
+            <aside class="two-box">
+                <h2>How do I use the website?</h2>
+                <h1><i class="fa fa-question" aria-hidden=true></i></h1>
+                <p>To use the website, you simply have to hover over the navbar and click on one of the pages. There you will be redirected to a 'hub' page. These 'hub' pages can redirect you to a page about a ship, or a class of ship - really whatever you press. <br><br><span class="note" style="text-align: center;">REMEMBER: The navbar will always be at the top of the screen!</span></p>
+            </aside>
+            <aside class="two-box">
+                <h2>About Us</h2>
+                <h1><i class="fa fa-address-card-o" aria-hidden="true"></i></h1>
+                <p>We are a site that contains naval history from WWI &amp; WWII, through the Cold War, right to present day navies. The website has been created entirely with <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" target="_blank">CSS3</a> and <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a>.</p>
+            </aside>
+        </div>
+    </section>
+</body>
+</html>

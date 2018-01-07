@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eashan Chauhan">
+	<!-- Title -->
+	<title>NavyShips - Aircraft Carriers</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        function openSideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('side-list').style.display = 'block';
+        }
+
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('side-list').style.display = 'none';
+        }
+    </script>
+    <script type="text/javascript">
+        function toggleSub1() {
+            var sub1 = document.getElementById('submenu1');
+            sub1.style.display == "block" ? sub1.style.display = "none" : 
+                sub1.style.display = "block"; 
+        }
+        
+        function toggleSub2() {
+            var sub2 = document.getElementById('submenu2');
+            sub2.style.display == "block" ? sub2.style.display = "none" :
+                sub2.style.display = "block";
+        }
+        
+        function toggleSub3() {
+            var sub3 = document.getElementById('submenu3');
+            sub3.style.display == "block" ? sub3.style.display = "none" :
+                sub3.style.display = "block";
+        }
+        
+        function toggleSub4() {
+            var sub4 = document.getElementById('submenu4');
+            sub4.style.display == "block" ? sub4.style.display = "none" :
+                sub4.style.display = "block";
+        }
+    </script>
+    <div class="side-icon1">
+        <span class="normal"><i class="fa fa-angle-double-right"></i></span><span class="rights"><p><i class="fa fa-angle-double-right"></i><span class="cr"> Copyright &copy; Eashan Chauhan</span></p></span>
+    </div>
+    <header>
+        <span class="open-side">
+            <a href="#" onclick="openSideMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+        <div class="side-menu" id="side-menu">
+            <a href="#" class="close-btn" onclick="closeSideMenu()">&times;</a>
+            <ul id="side-list">
+                <li><a href="../index.html">Home</a></li>
+                <li id="parent"><a onclick="toggleSub1()">Unused Ships &rarr;</a>
+                    <ul id="submenu1">
+                        <li><a href="./battleships.html">&raquo; Battleships</a></li>
+                        <li><a href="./battlecruisers.html">&raquo; Battlecruisers</a></li>
+                        <li><a href="./heavycruisers.html">&raquo; Heavy Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub2()">Ships in use &rarr;</a>
+                    <ul id="submenu2">
+                        <li><a href="./aircraftcarriers.html">&raquo; Aircraft Carriers</a></li>
+                        <li><a href="./helicoptercarriers.html">&raquo; Helicopter Carriers</a></li>
+                        <li><a href="./assaultships.html">&raquo; Assault Ships</a></li>
+                        <li><a href="./destroyers.html">&raquo; Destroyers</a></li>
+                        <li><a href="./frigates.html">&raquo; Frigates</a></li>
+                        <li><a href="./cruisers.html">&raquo; Cruisers</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub3()">Submarines &rarr;</a>
+                    <ul id="submenu3">
+                        <li><a href="../subs/older.html">&raquo; Older Subs</a></li>
+                        <li><a href="../subs/cruisemissile.html">&raquo; Cruise Missile Subs</a></li>
+                        <li><a href="../subs/ballisticmissile.html">&raquo; Ballistic Missile Subs</a></li>
+                        <li><a href="../subs/attack.html">&raquo; Attack Subs</a></li>
+                    </ul>
+                </li>
+                <li id="parent"><a onclick="toggleSub4()">Naval Bases &rarr;</a>
+                    <ul id="submenu4">
+                        <li><a href="../bases/royalnavy.html">&raquo; Royal Navy</a></li>
+                        <li><a href="../bases/usnavy.html">&raquo; US Navy</a></li>
+                        <li><a href="../bases/russiannavy.html">&raquo; Russian Navy</a></li>
+                        <li><a href="../bases/frenchnavy.html">&raquo; French Navy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="align-content: center;">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="javascript:void(0)">Unused Ships</a>
+                        <ul>
+                            <li><a href="./battleships.html">Battleships</a></li>
+                            <li><a href="./battlecruisers.html">Battlecruisers</a></li>
+                            <li><a href="./heavycruisers.html">Heavy Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Ships in use</a>
+                        <ul>
+                            <li><a href="./aircraftcarriers.html">Aircraft Carriers</a></li>
+                            <li><a href="./helicoptercarriers.html">Helicopter Carriers</a></li>
+                            <li><a href="./assaultships.html">Assault Ships</a></li>
+                            <li><a href="./destroyers.html">Destroyers</a></li>
+                            <li><a href="./frigates.html">Frigates</a></li>
+                            <li><a href="./cruisers.html">Cruisers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Submarines</a>
+                        <ul>
+                            <li><a href="../subs/older.html">Older</a></li>
+                            <li><a href="../subs/cruisermissile.html">Cruise Missile</a></li>
+                            <li><a href="../subs/ballisticmissile.html">Ballistic Missile</a></li>
+                            <li><a href="../subs/attack.html">Attack</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Naval Bases</a>
+                        <ul>
+                            <li><a href="./bases/royalnavy.html">Royal Navy</a></li>
+                            <li><a href="./bases/usnavy.html">US Navy</a></li>
+                            <li><a href="./bases/russiannavy.html">Russian Navy</a></li>
+                            <li><a href="x./bases/frenchnavy.html">French Navy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header-text">NavyShips</h1>
+    </header>
+    <section id="banner">
+        <h1>Aircraft Carriers - NavyShips</h1>
+    </section>
+    <section class="bg-strip bg1"></section>
+    <section class="content">
+        <div id="toc-container">
+            <p id="toc-title">US Aircraft Carriers</p>
+            <ul class="toc-list">
+                <li><a href="#prewar-uscarriers">1 Pre-War Carriers</a></li>
+                <li><a href="#worldwar-uscarriers">2 World War Carriers</a></li>
+                <li><a href="#coldwar-uscarriers">3 Cold War Carriers</a></li>
+                <li><a href="#postcoldwar-uscarriers">4 Post-Cold War Carriers</a></li>
+            </ul>
+        </div>
+        <div id="toc-container">
+            <p id="toc-title">Royal Navy Aircraft Carriers</p>
+            <ul class="toc-list">
+                <li><a href="#prewar-rncarriers">1 Pre-War Carriers</a></li>
+                <li><a href="#worldwar-rncarriers">2 World War Carriers</a></li>
+                <li><a href="#coldwar-rncarriers">3 Cold War Carriers</a></li>
+                <li><a href="#postcoldwar-rncarriers">4 Post-Cold War Carriers</a></li>
+            </ul>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 class="title" style="margin-top: 85px;">US Carriers</h1>
+    <section id="prewar-uscarriers">
+        <h2 class="subheading">Pre-War US Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>CV-1</td>
+                    <td>Langley-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Langley</li>
+                        </ul>
+                    </td>
+                    <td>1925-36 <small>(as an aircraft carrier)</small></td>
+                    <td>Converted from the USS Jupiter, a coiler. Served as an experimental ship from 1925-36 as an aircraft carrier before being converted to a seaplane tender and given the hull symbol of AV-3.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/USS_Langley_(CV-1)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CV-2 - CV-3</td>
+                    <td>Lexington-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Lexington</li>
+                            <li>USS Saratoga</li>
+                        </ul>
+                    </td>
+                    <td>1927-46</td>
+                    <td>Originally a class of 6 battlecruisers, they were converted to aircraft carriers whilst under construction.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Lexington-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CV-4</td>
+                    <td>Ranger-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Ranger</li>
+                        </ul>
+                    </td>
+                    <td>1934-46</td>
+                    <td>This ship was the first purpose-built US Navy aircraft carrier.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/USS_Ranger_(CV-4)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CV-5 - CV-6 &amp; CV-8</td>
+                    <td>Yorktown-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Yorktown</li>
+                            <li>USS Enterprise</li>
+                            <li>USS Hornet</li>
+                        </ul>
+                    </td>
+                    <td>1937-47</td>
+                    <td>The USS Hornet was built after the USS Wasp. By the end of September 1942, both the USS Yorktown and the USS Hornet were at the bottom of the Pacific; the USS Enterprise, the orphan of the class, became a symbol of the Pacific War.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Yorktown-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CV-7</td>
+                    <td>Wasp-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Wasp</li>
+                        </ul>
+                    </td>
+                    <td>1937-47</td>
+                    <td>The USS Wasp was a modified <i>Yorktown</i>-class. She was built on 3,000 less tons to use up alloted tonnage under the Washington Naval Treaty.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/USS_Wasp_(CV-7)">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="worldwar-uscarriers">
+        <h2 class="subheading">World War US Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>CV-9 - CV-21, CV-31 - 34, CV-36 - CV-40, CV-45 &amp; CV-47</td>
+                    <td>Essex-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Essex</li>
+                            <li>USS Yorktown</li>
+                            <li>USS Intrepid</li>
+                            <li>USS Hornet</li>
+                            <li>USS Franklin</li>
+                            <li>USS Ticonderoga</li>
+                            <li>USS Randolph</li>
+                            <li>USS Lexington</li>
+                            <li>USS Bunker Hill</li>
+                            <li>USS Wasp</li>
+                            <li>USS Hancock</li>
+                            <li>USS Bennington</li>
+                            <li>USS Boxer</li>
+                            <li>USS Bon Homme Richard</li>
+                            <li>USS Leyte</li>
+                            <li>USS Kearsarge</li>
+                            <li>USS Oriskany</li>
+                            <li>USS Antietam</li>
+                            <li>USS Princeton</li>
+                            <li>USS Shangri-La</li>
+                            <li>USS Lake Champlain</li>
+                            <li>USS Tarawa</li>
+                            <li>USS Valley Forge</li>
+                            <li>USS Phillippine Sea</li>
+                        </ul>
+                    </td>
+                    <td>1942-91</td>
+                    <td>This class constituted the Twentieth Century's largest class of heavy warships, with 24 ships being built. Originally, 32 ships were planned, but some were cancelled.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Essex-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CVL-22 - CVL-30</td>
+                    <td>Independence-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Independence</li>
+                            <li>USS Princeton</li>
+                            <li>USS Belleau Wood</li>
+                            <li>USS Cowpens</li>
+                            <li>USS Monterey</li>
+                            <li>USS Langley</li>
+                            <li>USS Cabot</li>
+                            <li>USS Bataan</li>
+                            <li>USS San Jacinto</li>
+                        </ul>
+                    </td>
+                    <td>1943-70</td>
+                    <td>These ships were converted Cleaveland-class cruisers.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Independence-class_aircraft_carrier">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="coldwar-uscarriers">
+        <h2 class="subheading">Cold War US Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>CV-41 - CV-43</td>
+                    <td>Midway-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Midway</li>
+                            <li>USS Franklin D. Roosevelt</li>
+                            <li>USS Coral Sea</li>
+                        </ul>
+                    </td>
+                    <td>1945-92</td>
+                    <td>This class was one of the longest-lived carrier designs in history. First commissioned in late 1945, the lead of her class, USS Midway was not decommissioned until 1992, shortly after serving in the Gulf War. The class was originally designated CVB.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Midway-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CVL-48 - CVL-49</td>
+                    <td>Saipan-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Saipan</li>
+                            <li>USS Wright</li>
+                        </ul>
+                    </td>
+                    <td>1946-70</td>
+                    <td>Built on moidified Baltimore-class cruiser hulls. Both were corverted to command-and-control ships in the mid-1950s.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Saipan-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CV-59 - CV-62</td>
+                    <td>Forrestal-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Forrestal</li>
+                            <li>USS Saratoga</li>
+                            <li>USS Ranger</li>
+                            <li>USS Independence</li>
+                        </ul>
+                    </td>
+                    <td>1955-98</td>
+                    <td>The <i>Forrestal</i>-class were the first 'supercarriers' of the navy.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Forrestal-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CV-63 - CV-64 &amp; CV-66 - CV-67</td>
+                    <td>Kitty Hawk-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Kitty Hawk</li>
+                            <li>USS Constellation</li>
+                            <li>USS America</li>
+                            <li>USS John F. Kennedy</li>
+                        </ul>
+                    </td>
+                    <td>1961-2009</td>
+                    <td>The USS John. F Kennedy is the last conventionally-powered carrier built.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Kitty_Hawk-class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CVN-65</td>
+                    <td>Enterprise-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Enterprise</li>
+                        </ul>
+                    </td>
+                    <td>1961-2012</td>
+                    <td>The first nuclear-powered aircraft carrier.</td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/USS_Enterprise_(CVN-65)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>CVN-68 - CVN-77</td>
+                    <td>Nimitz-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Nimitz</li>
+                            <li>USS Dwight D. Eisenhower</li>
+                            <li>USS Carl Vinson</li>
+                            <li>USS Theodore Roosevelt</li>
+                            <li>USS Abraham Lincoln</li>
+                            <li>USS George Washington</li>
+                            <li>USS John C. Stennis</li>
+                            <li>USS Harry S. Truman</li>
+                            <li>USS Ronald Reagan</li>
+                            <li>USS George H.W. Bush</li>
+                        </ul>
+                    </td>
+                    <td>1975-present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Nimitz-class_aircraft_carrier">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="postcoldwar-uscarriers">
+        <h2 class="subheading">Post-Cold War US Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>CVN-78</td>
+                    <td>Gerald R. Ford-class</td>
+                    <td>
+                        <ul>
+                            <li>USS Gerald R. Ford</li>
+                            <li><small>(9 more planned)</small></li>
+                        </ul>
+                    </td>
+                    <td>2017-present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Gerald_R._Ford-class_aircraft_carrier">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <h1 class="title">Royal Navy Carriers</h1>
+    <section id="prewar-rncarriers">
+        <h2 class="subheading">Pre-War Royal Navy Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>I49</td>
+                    <td>Argus-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Argus</li>
+                        </ul>
+                    </td>
+                    <td>1918-46</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Argus_(I49)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>50, 77 &amp; 47</td>
+                    <td>Courageous-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Courageous</li>
+                            <li>HMS Glorious</li>
+                            <li>HMS Furious</li>
+                        </ul>
+                    </td>
+                    <td>1925-45</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Glorious_class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>94</td>
+                    <td>Eagle-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Eagle</li>
+                        </ul>
+                    </td>
+                    <td>1924-42</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Eagle_(1918)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>D95</td>
+                    <td>Hermes-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Hermes</li>
+                        </ul>
+                    </td>
+                    <td>1924-42</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Hermes_(95)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>91</td>
+                    <td>Ark Royal-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Ark Royal</li>
+                        </ul>
+                    </td>
+                    <td>1938-41</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Ark_Royal_(91)">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="worldwar-rncarriers">
+        <h2 class="subheading">World War Royal Navy Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>I72</td>
+                    <td>Unicorn-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Unicorn</li>
+                        </ul>
+                    </td>
+                    <td>1938-41</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Unicorn_(I72)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>R38, R67, 87 &amp; 92</td>
+                    <td>Illustrious-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Illustrious</li>
+                            <li>HMS Formidable</li>
+                            <li>HMS Victorious</li>
+                            <li>HMS Indomitable</li>
+                        </ul>
+                    </td>
+                    <td>1938-41</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Unicorn_(I72)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>R10 &amp; R86</td>
+                    <td>Implacable-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Implacable</li>
+                            <li>HMS Indefatigable</li>
+                        </ul>
+                    </td>
+                    <td>1938-41</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/HMS_Unicorn_(I72)">Click</a></td>
+                </tr>
+                <tr>
+                    <td>R16, R31, R51, R61 - R64, R68, R71 &amp; R76</td>
+                    <td>Colossus-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Colossus</li>
+                            <li>HMS Glory</li>
+                            <li>HMS Ocean</li>
+                            <li>HMS Theseus</li>
+                            <li>HMS Triumph</li>
+                            <li>HMS Venerable</li>
+                            <li>HMS Vengeance</li>
+                            <li>HMS Warrior</li>
+                            <li>HMS Perseus</li>
+                            <li>HMS Pioneer</li>
+                        </ul>
+                    </td>
+                    <td>1944-60</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/1942_Design_Light_Fleet_Carrier">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="coldwar-rncarriers">
+        <h2 class="subheading">Cold War Royal Navy Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>ss
+                <tr>
+                    <td>RO5 &amp; R09</td>
+                    <td>Audacious-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Eagle</li>
+                            <li>HMS Ark Royal</li>
+                        </ul>
+                    </td>
+                    <td>1951-79</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Audacious_class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>RO6 - R08 &amp; R12</td>
+                    <td>Centaur-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Centaur</li>
+                            <li>HMS Albion</li>
+                            <li>HMS Bulwark</li>
+                            <li>HMS Hermes</li>
+                        </ul>
+                    </td>
+                    <td>1953-84</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Centaur_class_aircraft_carrier">Click</a></td>
+                </tr>
+                <tr>
+                    <td>R05 - R07</td>
+                    <td>Invincible-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Invincible</li>
+                            <li>HMS Illustrious</li>
+                            <li>HMS Ark Royal</li>
+                        </ul>
+                    </td>
+                    <td>1980-2014</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Invincible_class_aircraft_carrier">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="postcoldwar-rncarriers">
+        <h2 class="subheading">Post-Cold War Royal Navy Carriers</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th width="10%">Designation</th>
+                    <th>Class Name</th>
+                    <th width="15%">Ships of class</th>
+                    <th width="15%">Active</th>
+                    <th width="38%";>Description</th>
+                    <th width: "9%">More Info</th>
+                </tr>
+                <tr>
+                    <td>R08 - R09</td>
+                    <td>Queen ELizabeth-class</td>
+                    <td>
+                        <ul>
+                            <li>HMS Queen ELizabeth</li>
+                            <li>HMS Prince of Wales <small>(To be commissioned)</small></li>
+                        </ul>
+                    </td>
+                    <td>2017-present</td>
+                    <td></td>
+                    <td><a target="_blank" href="https://en.wikipedia.org/wiki/Queen_Elizabeth-class_aircraft_carrier">Click</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
